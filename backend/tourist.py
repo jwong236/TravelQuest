@@ -76,7 +76,7 @@ class TouristClass:
         
 if __name__ == "__main__":
     t = TouristClass()
-    print(t.address_to_coordinates("1141 sunsetbluff rd walnut CA 91789"))
+    print(t.address_to_coordinates("13 Paul Street Daly City CA 94014"))
     print(t.get_nearby_poi())
     print()
     

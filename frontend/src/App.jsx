@@ -8,16 +8,20 @@ import './app.css';
 
 function test() {
   let data = {"address": document.getElementById("address").value};
+
   console.log(data);
   console.log(JSON.stringify(data));
   console.log(data["address"]);
+
   fetch("http://127.0.0.1:5000/", {
     "method": "POST",
     "headers": {"Content-Type": "application/json"},
     "body": JSON.stringify(data),
   })
   .then(res => res.json())
-  .then(resp => {console.log(resp)});
+  .then(resp => {
+      return resp;
+  });
 }
 
 function App() {
@@ -27,8 +31,8 @@ function App() {
       <p className="home-description">Embark on your quest to travel around the world!</p>
       <Box sx={{ display: 'flex', alignItems: 'center', gap: '24px' }}>
         <HomeIcon fontSize='large' />
-        <TextField className="home-search" id="address" label="Address" variant="outlined" InputLabelProps={{ style: { color: 'white' } }} sx={{fieldset: { borderColor: "white" },"&:hover fieldset": {borderColor: "white"} ,input: {color: "white"}}} />
-        <Link to={'results'}>
+        <TextField className="home-search" id="address" label="Address" variant="outlined" InputLabelProps={{ style: { color: 'white' } }} sx={{fieldset: { borderColor: "white" },input: {color: "white"}}} />
+        <Link to='/results' state={{ from: "occupation" }}>
           <Button className="form-button" variant="contained" color="primary" component="span" type="submit" onClick={test}>Search</Button>
         </Link>
       </Box>
