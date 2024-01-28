@@ -1,5 +1,4 @@
 import json
-from utils.quest import Quest
 import random
 
 class Quester:
@@ -18,5 +17,4 @@ class Quester:
                 if q["quest_type"] == quest_type:
                     quests.append(q)
     
-        random.randint(0, 5)
-        return quests
+        return random.sample(quests, self.quest_limits[quest_type])
