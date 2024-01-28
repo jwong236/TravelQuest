@@ -6,8 +6,15 @@ import HomeIcon from '@mui/icons-material/Home';
 import './app.css';
 
 function test() {
-  console.log("Hello");
-  fetch("http://localhost:5000")
+  let data = {"address": document.getElementById("address").value};
+  console.log(data);
+  console.log(JSON.stringify(data));
+  console.log(data["address"]);
+  fetch("http://127.0.0.1:5000/", {
+    "method": "POST",
+    "headers": {"Content-Type": "application/json"},
+    "body": JSON.stringify(data),
+  })
   .then(res => res.json())
   .then(resp => {console.log(resp)});
 }
@@ -19,7 +26,7 @@ function App() {
       <p className="home-description">Embark on your quest to travel around the world!</p>
       <Box sx={{ display: 'flex', alignItems: 'center', gap: '24px' }}>
         <HomeIcon fontSize='large' />
-        <TextField className="home-search" id="outlined-basic" label="Address" variant="outlined" InputLabelProps={{ style: { color: 'white' } }} sx={{
+        <TextField className="home-search" id="address" label="Address" variant="outlined" InputLabelProps={{ style: { color: 'white' } }} sx={{
           fieldset: { borderColor: "white" }
 
         }} />
