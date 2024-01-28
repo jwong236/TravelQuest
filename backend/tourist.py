@@ -16,7 +16,20 @@ class TouristClass:
         response = requests.post("https://www.googleapis.com/geolocation/v1/geolocate", params=params).json()
         self.latitude = response["location"]["lat"]
         self.longitude = response["location"]["lng"]
-    def get_nearby_poi(self, radius=5000, limit = 100, poi_type='tourist_attraction'):
+    def get_photo_url(self, photo_reference):
+        """
+        Converts a photo reference into an HTTPS URL.
+        """
+        base_url = "https://maps.googleapis.com/maps/api/place/photo"
+        params = {
+            'maxwidth': 400,
+            'photoreference': photo_reference,
+            'key': api_key
+        }
+        response = requests.get(base_url, params=params)
+        return response.url
+
+    def get_nearby_poi(self, radius=5000, poi_type='tourist_attraction'):
         """
         Returns a list of locations nearby tourist's current coordinates
         """
@@ -24,22 +37,22 @@ class TouristClass:
         params = {
             'location': f'{self.latitude},{self.longitude}',
             'radius': radius,
-            'types': poi_type,
+            'type': poi_type,
             'key': api_key
         }
         response = requests.get(url, params=params).json()
         
-        poi_names = []
+        pois = []
         if response.get("results"):
             for place in response["results"]:
                 p = {
                     "name": place["name"],
-                    "photo_reference": place["photos"][0]["photo_reference"] if "photos" in place and place["photos"] else None,
+                    "photo": self.get_photo_url(place["photos"][0]["photo_reference"]) if "photos" in place and place["photos"] else None,
                     "price_level": place.get("price_level"),
                     "rating": place.get("rating"),
                     "latitude": place["geometry"]["location"]["lat"],
                     "longitude": place["geometry"]["location"]["lng"]
                 }
-                poi_names.append(p)
+                pois.append(p)
 
-        return poi_names
+        return pois

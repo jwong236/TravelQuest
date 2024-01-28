@@ -2,150 +2,139 @@
     {
         "name" : "Having a bad day.",
         "description" : "Make a sad face in your picture.",
-        "quest_type" : "Daily",
+        "quest_type" : "daily",
         "difficulty" : "1/10",
         "points" : 4
- 
- 
     },{
         "name" : "Having a good day.",
         "description" : "Make a happy face in your picture",
-        "quest_type" : "Daily",
+        "quest_type" : "daily",
         "difficulty" : "1/10",
         "points" : 4
- 
- 
     },{
         "name" : "Grey-t to see you",
         "description" : "Pose wearing something grey in your picture.",
-        "quest_type" : "Daily",
+        "quest_type" : "daily",
         "difficulty" : "2/10",
         "points" : 5
  
+    },{
+        "name" : "Chair",
+        "description" : "Take a picture of a chair",
+        "quest_type" : "daily",
+        "difficulty" : "3/10",
+        "points" : 6
  
     },{
-        "name" : "",
-        "description" : "",
-        "quest_type" : "",
-        "difficulty" : "",
-        "points" : ""
- 
+        "name" : "Feeling blue",
+        "description" : "Take a picture wearing something blue!",
+        "quest_type" : "daily",
+        "difficulty" : "3/10",
+        "points" : 5
  
     },{
         "name" : "Yellow mellow",
-        "description" : "Pose wearing something yellow in your picture.",
-        "quest_type" : "Daily",
+        "description" : "Take a picture wearing something yellow!",
+        "quest_type" : "daily",
+        "difficulty" : "3/10",
+        "points" : 6
+    },{
+        "name" : "Bestie selfie",
+        "description" : "Take a picture with your friend",
+        "quest_type" : "daily",
+        "difficulty" : "4/10",
+        "points" : 7
+    },{
+        "name" : "Purple photo",
+        "description" : "Take a picture wearing something yellow!",
+        "quest_type" : "daily",
+        "difficulty" : "4/10",
+        "points" : 7
+    },{
+        "name" : "Green Bean!",
+        "description" : "Take a picture wearing something green!",
+        "quest_type" : "daily",
+        "difficulty" : "4/10",
+        "points" : 7
+    },{
+        "name" : "Brown Fit",
+        "description" : "Take a picture wearing something brown!",
+        "quest_type" : "daily",
+        "difficulty" : "4/10",
+        "points" : 7
+    },{
+        "name" : "Raging red",
+        "description" : "Take a picture wearing something red!",
+        "quest_type" : "daily",
         "difficulty" : "4/10",
         "points" : 5
- 
- 
     },{
-        "name" : "Stop for a picture",
-        "description" : "Pose in front of a stop sign, please be safe and away from the road.",
-        "quest_type" : "Daily",
-        "difficulty" : "5/10",
+        "name" : "Basic black",
+        "description" : "Take a picture wearing something black!",
+        "quest_type" : "daily",
+        "difficulty" : "4/10",
+        "points" : 3
+    },{
+        "name" : "White-out!",
+        "description" : "Take a picture wearing something white!",
+        "quest_type" : "daily",
+        "difficulty" : "4/10",
+        "points" : 5
+    },{
+        "name" : "Rocky Road!",
+        "description" : "Take a picture of a rock!",
+        "quest_type" : "daily",
+        "difficulty" : "4/10",
+        "points" : 8
+    },{
+        "name" : "Opening doors",
+        "description" : "Take a picture of a door",
+        "quest_type" : "daily",
+        "difficulty" : "4/10",
         "points" : 7
- 
- 
+
     },{
-        "name" : "",
-        "description" : "",
-        "quest_type" : "",
-        "difficulty" : "",
-        "points" : ""
-    },{
-        "name" : "",
-        "description" : "",
-        "quest_type" : "",
-        "difficulty" : "",
-        "points" : ""
-    },{
-        "name" : "",
-        "description" : "",
-        "quest_type" : "",
-        "difficulty" : "",
-        "points" : ""
-    },{
-        "name" : "",
-        "description" : "",
-        "quest_type" : "",
-        "difficulty" : "",
-        "points" : ""
-    },{
-        "name" : "",
-        "description" : "",
-        "quest_type" : "",
-        "difficulty" : "",
-        "points" : ""
-    },{
-        "name" : "",
-        "description" : "",
-        "quest_type" : "",
-        "difficulty" : "",
-        "points" : ""
-    }{
-        "name" : "",
-        "description" : "",
-        "quest_type" : "",
-        "difficulty" : "",
-        "points" : ""
-    },{
-        "name" : "",
-        "description" : "",
-        "quest_type" : "",
-        "difficulty" : "",
-        "points" : ""
-    },{
-        "name" : "",
-        "description" : "",
-        "quest_type" : "",
-        "difficulty" : "",
-        "points" : ""
- 
- 
-    },{
-        "name" : "Bet you don't have this in your wardrobe",
-        "description" : "Pose wearing something orange in your picture.",
+        "name" : "Orange you glad you had this in your wardrobe.",
+        "description" : "Take a picture wearing something orange!",
         "quest_type" : "weekly",
         "difficulty" : "5/10",
         "points" : 6
     },{
-        "name" : "",
-        "description" : "",
-        "quest_type" : "",
-        "difficulty" : "",
-        "points" : ""
+        "name" : "Stop for a picture",
+        "description" : "Pose in front of a stop sign, please be safe and away from the road.",
+        "quest_type" : "weekly",
+        "difficulty" : "5/10",
+        "points" : 7
     },{
-        "name" : "",
-        "description" : "",
-        "quest_type" : "",
-        "difficulty" : "",
-        "points" : ""
+        "name" : "Canine and you!",
+        "description" : "Take a picture with a dog",
+        "quest_type" : "weekly",
+        "difficulty" : "6/10",
+        "points" : 9
     },{
-        "name" : "",
-        "description" : "",
-        "quest_type" : "",
-        "difficulty" : "",
-        "points" : ""
+    "name" : "Kitty and you!",
+        "description" : "Take a picture with a cat",
+        "quest_type" : "weekly",
+        "difficulty" : "6/10",
+        "points" : 9
     },{
-        "name" : "",
-        "description" : "",
-        "quest_type" : "",
-        "difficulty" : "",
-        "points" : ""
+        "name" : "Time flies by",
+        "description" : "Pose in front of an old-school clock.",
+        "quest_type" : "weekly",
+        "difficulty" : "6/10",
+        "points" : 10
     },{
-        "name" : "",
-        "description" : "",
-        "quest_type" : "",
-        "difficulty" : "",
-        "points" : ""
+        "name" : "Something's fishy",
+        "description" : "Take a picture with a fish!",
+        "quest_type" : "7/10",
+        "difficulty" : "weekly",
+        "points" : 12
     },{
-        "name" : "",
-        "description" : "",
-        "quest_type" : "",
-        "difficulty" : "",
-        "points" : ""
- 
+        "name" : "Bunny hop",
+    "description" : "Take a picture with a bunny!",
+        "quest_type" : "7/10",
+        "difficulty" : "weekly",
+        "points" : 14
  
     },{
         "name" : "Feeling like eating chicken today?",
@@ -154,15 +143,15 @@
         "difficulty" : "8/10",
         "points" : 15
     },{
-        "name" : "",
-        "description" : "",
-        "quest_type" : "Challenge",
+        "name" : "An Adidas moment!",
+        "description" : "Take a picture with any Supreme clothes and/or accessories",
+        "quest_type" : "challenge",
         "difficulty" : "9/10",
-        "points" :
+        "points" : 18
     },{
-        "name" : "A supreme picture",
-        "description" : "Pose with any Supreme clothes and/or accessories",
-        "quest_type" : "Challenege",
+        "name" : "A supreme picture!",
+        "description" : "Take a picture with any Supreme clothes and/or accessories",
+        "quest_type" : "challenege",
         "difficulty" : "10/10",
         "points" : 20
     }
