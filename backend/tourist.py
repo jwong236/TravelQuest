@@ -50,8 +50,8 @@ class TouristClass:
                     "photo": self.get_photo_url(place["photos"][0]["photo_reference"]) if "photos" in place and place["photos"] else None,
                     "price_level": place.get("price_level"),
                     "rating": place.get("rating"),
-                    "latitude": place["geometry"]["location"]["lat"],
-                    "longitude": place["geometry"]["location"]["lng"]
+                    #"latitude": place["geometry"]["location"]["lat"],
+                    #"longitude": place["geometry"]["location"]["lng"]
                 }
                 pois.append(p)
 
@@ -71,3 +71,10 @@ class TouristClass:
             return location['lat'], location['lng']
         else:
             return None, None
+        
+if __name__ == "__main__":
+    t = TouristClass()
+    t.fetch_current_location()
+    print(t.get_nearby_poi())
+    print()
+    print(t.address_to_coordinates("9 E. Cambridge Ave. Oxnard, CA 93030"))
