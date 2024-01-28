@@ -29,7 +29,7 @@ class TouristClass:
         response = requests.get(base_url, params=params)
         return response.url
 
-    def get_nearby_poi(self, radius=5000, poi_type='tourist_attraction'):
+    def get_nearby_poi(self, radius=5000, poi_type='tourist_attraction', lat = None, lng = None):
         """
         Returns a list of locations nearby tourist's current coordinates
         """
@@ -68,13 +68,15 @@ class TouristClass:
         response = requests.get(geocode_url, params=params).json()
         if response['status'] == 'OK' and response['results']:
             location = response['results'][0]['geometry']['location']
+            self.latitude = location['lat']
+            self.longitude = location['lng']
             return location['lat'], location['lng']
         else:
             return None, None
         
 if __name__ == "__main__":
     t = TouristClass()
-    t.fetch_current_location()
+    print(t.address_to_coordinates("1141 sunsetbluff rd walnut CA 91789"))
     print(t.get_nearby_poi())
     print()
-    print(t.address_to_coordinates("9 E. Cambridge Ave. Oxnard, CA 93030"))
+    
