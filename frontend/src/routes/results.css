@@ -1,0 +1,17 @@
+body {
+    margin-right: 0px;
+    margin-left: 24px;
+    
+}
+.grid-small-container {
+    color: black;
+    min-width: 300px;
+    min-height: 300px;
+    background-color: white;
+    margin: 20px;
+}
+
+.item {
+    background-color: white;
+}
+

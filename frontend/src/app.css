@@ -10,7 +10,6 @@ body {
     background: url('https://media.cnn.com/api/v1/images/stellar/prod/170407220916-04-iconic-mountains-matterhorn-restricted.jpg?q=w_2512,h_1413,x_0,y_0,c_fill/h_618') no-repeat center center fixed;
     background-size: cover;
     height: 100%;
-    overflow: hidden;
     margin: 72px;
 }
 
