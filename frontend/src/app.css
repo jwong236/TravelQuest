@@ -1,0 +1,46 @@
+* {
+    font-size: 16px;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+body {
+    background: url('https://media.cnn.com/api/v1/images/stellar/prod/170407220916-04-iconic-mountains-matterhorn-restricted.jpg?q=w_2512,h_1413,x_0,y_0,c_fill/h_618') no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+    margin: 72px;
+}
+
+.homescreen-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    align-items: center;
+    gap: 48px;
+}
+
+.home-title {
+    font-size: 6rem;
+}
+
+.home-description {
+    font-size: 2rem;
+}
+
+.home-search {
+    width: 512px;
+}
+
+.homescreen-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+}
+
+.form-button {
+    width: 128px;
+}
