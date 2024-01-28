@@ -1,0 +1,40 @@
+* {
+    font-size: 16px;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.homescreen-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    gap: 48px;
+}
+
+.home-title {
+    font-size: 6rem;
+}
+
+.home-description {
+    font-size: 2rem;
+}
+
+.home-search {
+    display: flex;
+    width: 512px;  
+}
+
+.homescreen-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+}
+
+.form-button {
+    width: 128px;
+}
