@@ -35,7 +35,7 @@ class TouristClass:
         """
         url = "https://maps.googleapis.com/maps/api/place/nearbysearch/json"
         params = {
-            'location': f'{self.latitude},{self.longitude}',
+            'location': f'{self.latitude}, {self.longitude}',
             'radius': radius,
             'type': poi_type,
             'key': api_key
@@ -56,3 +56,18 @@ class TouristClass:
                 pois.append(p)
 
         return pois
+    def address_to_coordinates(self, address):
+        """
+        Converts a given address to geographic coordinates (latitude and longitude).
+        """
+        geocode_url = "https://maps.googleapis.com/maps/api/geocode/json"
+        params = {
+            'address': address,
+            'key': api_key
+        }
+        response = requests.get(geocode_url, params=params).json()
+        if response['status'] == 'OK' and response['results']:
+            location = response['results'][0]['geometry']['location']
+            return location['lat'], location['lng']
+        else:
+            return None, None
